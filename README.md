@@ -8,7 +8,10 @@ This project enhances a mean-variance portfolio optimization by recalculating ex
 - Estimate factor betas for each stock using OLS regression
 - Compute expected returns using:
   
-  E[R] = Rf + β_mkt(Rm - Rf) + β_SMB(SMB) + β_HML(HML) + β_MOM(MOM)
+ $$
+E[R_i] = R_f + \beta_{\text{mkt}}(R_m - R_f) + \beta_{\text{SMB}} \cdot \text{SMB} + \beta_{\text{HML}} \cdot \text{HML} + \beta_{\text{MOM}} \cdot \text{MOM}
+$$
+
 
 - Rebuild the efficient frontier using these expected returns
 - Compare new vs. original frontier based on mean returns
