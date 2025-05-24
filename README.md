@@ -7,6 +7,7 @@ This project enhances a mean-variance portfolio optimization by recalculating ex
 - Download and merge Fama-French factor data with historical stock returns
 - Estimate factor betas for each stock using OLS regression
 - Compute expected returns using:
+  
   $$
 E[R_i] = R_f + \beta_{\text{mkt}}(R_m - R_f) + \beta_{\text{SMB}} \cdot \text{SMB} + \beta_{\text{HML}} \cdot \text{HML} + \beta_{\text{MOM}} \cdot \text{MOM}
 $$
