@@ -13,15 +13,16 @@ E[R_i] = R_f + \beta_{\text{mkt}}(R_m - R_f) + \beta_{\text{SMB}} \cdot \text{SM
 $$
 
 Where:  
-- \( E[R_i] \): Expected return of stock \( i \)  
-- \( R_f \): Risk-free rate  
-- \( R_m \): Market return  
-- \( R_m - R_f \): Market risk premium  
-- \( \beta_{\text{mkt}} \): Sensitivity to the market factor  
-- \( \beta_{\text{SMB}} \): Sensitivity to the size factor (Small Minus Big)  
-- \( \beta_{\text{HML}} \): Sensitivity to the value factor (High Minus Low)  
-- \( \beta_{\text{MOM}} \): Sensitivity to the momentum factor (past winners minus losers)  
-- \( \text{SMB}, \text{HML}, \text{MOM} \): Fama-French factor premiums
+- $E[R_i]$: Expected return of stock $i$  
+- $R_f$: Risk-free rate  
+- $R_m$: Market return  
+- $(R_m - R_f)$: Market risk premium  
+- $\beta_{\text{mkt}}$: Sensitivity to the market factor  
+- $\beta_{\text{SMB}}$: Sensitivity to the size factor (Small Minus Big)  
+- $\beta_{\text{HML}}$: Sensitivity to the value factor (High Minus Low)  
+- $\beta_{\text{MOM}}$: Sensitivity to the momentum factor (past winners minus losers)  
+- $SMB$, $HML$, $MOM$: Fama-French factor premiums
+
 - Rebuild the efficient frontier using these expected returns
 - Compare new vs. original frontier based on mean returns
 
