@@ -7,21 +7,9 @@ This project enhances a mean-variance portfolio optimization by recalculating ex
 - Download and merge Fama-French factor data with historical stock returns
 - Estimate factor betas for each stock using OLS regression
 - Compute expected returns using:
-  
- $$
-E[R_i] = R_f + \beta_{\text{mkt}}(R_m - R_f) + \beta_{\text{SMB}} \cdot \text{SMB} + \beta_{\text{HML}} \cdot \text{HML} + \beta_{\text{MOM}} \cdot \text{MOM},
+  $$
+E[R_i] = R_f + \beta_{\text{mkt}}(R_m - R_f) + \beta_{\text{SMB}} \cdot \text{SMB} + \beta_{\text{HML}} \cdot \text{HML} + \beta_{\text{MOM}} \cdot \text{MOM}
 $$
-Where:  
-- \( E[R_i] \): Expected return of stock \(i\)  
-- \( R_f \): Risk-free rate  
-- \( R_m \): Market return  
-- \( R_m - R_f \): Market risk premium  
-- \( \beta_{\text{mkt}} \): Sensitivity to the market factor  
-- \( \beta_{\text{SMB}} \): Sensitivity to the size factor (Small Minus Big)  
-- \( \beta_{\text{HML}} \): Sensitivity to the value factor (High Minus Low)  
-- \( \beta_{\text{MOM}} \): Sensitivity to the momentum factor (Momentum = past winners minus losers)  
-- \( \text{SMB}, \text{HML}, \text{MOM} \): Factor premiums from the Fama-French dataset
-
 
 - Rebuild the efficient frontier using these expected returns
 - Compare new vs. original frontier based on mean returns
